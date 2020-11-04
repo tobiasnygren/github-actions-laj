@@ -9,13 +9,21 @@ on:
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
-  # This workflow contains a single job called "greet"
-  greet:
+  # This workflow contains a single job called "wpv"
+  wpv:
     # The type of runner that the job will run on
     runs-on: ubuntu-latest
 
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
-    # Runs a single command using the runners shell
+    - name: checkout
+      uses: actions/checkout@v2
+    # Get WordPress version
     - name: Get WordPress version
-      run: git ls-remote --tags https://github.com/WordPress/WordPress.git | tail -n1 | awk -F'/' '{print $3}'
+      run: |
+        export wpversion=$(git ls-remote --tags https://github.com/WordPress/WordPress.git | tail -n1 | awk -F'/' '{print $3}')
+        echo $wpversion > index.html
+        git pull
+        git add .
+        git commit -m "$wpversion, checked: $(date +'%F %T %Z')"
+        git push origin main
