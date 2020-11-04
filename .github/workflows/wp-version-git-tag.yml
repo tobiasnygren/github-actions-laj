@@ -23,6 +23,8 @@ jobs:
       run: |
         export wpversion=$(git ls-remote --tags https://github.com/WordPress/WordPress.git | tail -n1 | awk -F'/' '{print $3}')
         echo $wpversion > index.html
+        git config --local user.email "builder@my-little-builder.example"
+        git config --local user.name "My Little Builder GitHub"
         git add .
         git commit -m "$wpversion, checked: $(date +'%F %T %Z')"
         git push origin main
