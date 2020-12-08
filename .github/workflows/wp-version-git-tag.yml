@@ -29,8 +29,8 @@ jobs:
           echo $wpversion > index.html
           git config --local user.email "builder@my-little-builder.example"
           git config --local user.name "My Little Builder GitHub"
-          git add .
-          git commit -m "$wpversion, checked: $(date +'%F %T %Z')"
-          git push origin main
+          git add .  --quiet
+          git commit -m "$wpversion, checked: $(date +'%F %T %Z')"  --quiet
+          git push origin main --quiet
         fi
         
