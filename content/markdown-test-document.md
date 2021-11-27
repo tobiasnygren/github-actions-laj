@@ -16,4 +16,4 @@ Huvudsaken är att kroppen finns tillgänglig när handlingar utförs. Ibland ut
 
 * [New England Journal of Medicine](https://journal.example)
 * Tankar
-* Olika kombinationer av bokstäver på ett tangenbord
+* Olika kombinationer av bokstäver på ett tangentbord
