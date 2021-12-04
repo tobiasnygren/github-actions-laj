@@ -2,12 +2,13 @@
 # Utvärdera Hugo + Github Actions
 
 
-## 1. MVP utan Hugo
+## 1. MVP med Hugo
 
 ### TODO: 
 - [ ] Utvärdera [GitHub Actions for GitHub Pages 🚀](https://github.com/peaceiris/actions-gh-pages)
-  - [ ] Skapa test markdown-dokument
-  - [ ] Testa att publicera som sidor som html
-  - [ ] ???
+  - [x] Skapa test Hugo-projekt
+  - [x] Lägg in tema
+  - [x] Använd temats test-data
+  - [ ] Försök publicera i feature-branchen
   - [ ] Profit
 
