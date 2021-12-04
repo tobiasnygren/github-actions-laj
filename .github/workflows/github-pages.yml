@@ -30,4 +30,5 @@ jobs:
         if: ${{ github.ref == 'refs/heads/feature/hugo-github-pages' }}
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_branch: feature/hugo-github-pages
           publish_dir: ./public
