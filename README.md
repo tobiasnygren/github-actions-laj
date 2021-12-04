@@ -9,7 +9,7 @@
   - [x] Skapa test Hugo-projekt
   - [x] Lägg in tema
   - [x] Använd temats test-data
-  - [ ] Försök publicera i feature-branchen
+  - [ ] ~~Försök publicera i feature-branchen~~ (går ej för att skydda innehållet <3) 
   - [ ] ???
   - [ ] Profit
 
